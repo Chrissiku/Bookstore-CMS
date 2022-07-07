@@ -25,7 +25,7 @@ const HomePage = () => (
       </header>
       <main>
         <div className="book">
-          <div className="l">
+          <div className="left-book">
             <span className="type">Action</span>
             <h3>The Hunger Games</h3>
             <span className="author">Suzanne Collins</span>
@@ -41,24 +41,37 @@ const HomePage = () => (
               </li>
             </ul>
           </div>
-        </div>
 
-        <div className="r">
-          <div className="progress">
-            <div className="circle">
-              <div className="inner">hello</div>
+          <div className="right-book">
+            <div className="progress">
+              <div className="circle">
+                <div className="inner"></div>
+              </div>
+              <div className="val">
+                <span className="completed-val">64%</span>
+                <span className="completed">Completed</span>
+              </div>
             </div>
-            <div className="progress val">
-              <span>65%</span>
-              <span>Completed</span>
+            <span className="line"></span>
+            <div className="chapter">
+              <h4>CURRENT CHAPTER</h4>
+              <span>Chapter 17</span>
+              <button type="button">UPDATE PROGRESS</button>
             </div>
           </div>
-          <span className="line"></span>
-          <div className="chapter">
-            <h4>CURRENT CHAPTER</h4>
-            <span>Chapter 17</span>
-            <button type="button">UPDATE PROGRESS</button>
-          </div>
+        </div>
+        <div className="separator"></div>
+        <div className="add-book">
+          <h3>ADD NEW BOOK</h3>
+          <form>
+            <input type="text" placeholder="Book title" />
+            <select>
+              <option>Action</option>
+              <option>Science Fiction</option>
+              <option>Economy</option>
+            </select>
+            <button type="submit">ADD BOOK</button>
+          </form>
         </div>
       </main>
     </div>
