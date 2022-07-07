@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable quotes */
 import React from "react";
@@ -24,10 +25,10 @@ const HomePage = () => (
       </header>
       <main>
         <div className="book">
-          <div>
-            <span>Action</span>
+          <div className="l">
+            <span className="type">Action</span>
             <h3>The Hunger Games</h3>
-            <span>Suzanne Collins</span>
+            <span className="author">Suzanne Collins</span>
             <ul>
               <li>
                 <a>Comments</a>
@@ -39,6 +40,24 @@ const HomePage = () => (
                 <a>Edit</a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div className="r">
+          <div className="progress">
+            <div className="circle">
+              <div className="inner">hello</div>
+            </div>
+            <div className="progress val">
+              <span>65%</span>
+              <span>Completed</span>
+            </div>
+          </div>
+          <span className="line"></span>
+          <div className="chapter">
+            <h4>CURRENT CHAPTER</h4>
+            <span>Chapter 17</span>
+            <button type="button">UPDATE PROGRESS</button>
           </div>
         </div>
       </main>
