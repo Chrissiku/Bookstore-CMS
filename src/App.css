@@ -58,12 +58,21 @@ body {
   gap: 50px;
 }
 
-.container header .left .menu li,
-.container header .left .menu li:hover {
+.container header .left .menu li {
   cursor: pointer;
   font-family: var(--Montserrat);
   font-size: 13px;
   font-weight: 400;
+  color: rgb(114, 108, 108);
+}
+
+.container main .book .left-book ul li {
+  border-right: 2px solid #b3b0b0;
+  padding: 0 10px;
+  font-size: 0.875rem;
+}
+
+.container header .left .menu li:hover {
   color: rgb(114, 108, 108);
 }
 
@@ -116,6 +125,13 @@ body {
   color: #999595;
 }
 
+.container main .add-book h3 {
+  font-size: 1.25rem;
+  font-family: var(--Montserrat);
+  color: #888;
+  margin-bottom: 1rem;
+}
+
 .container main .book .left-book h3 {
   font-size: 1.375rem;
   font-family: var(--Roboto);
@@ -139,12 +155,6 @@ body {
   font-weight: 300;
   color: #4386bf;
   margin-top: 20px;
-}
-
-.container main .book .left-book ul li {
-  border-right: 2px solid #b3b0b0;
-  padding: 0 10px;
-  font-size: 0.875rem;
 }
 
 .container main .book .left-book ul li:first-child {
@@ -173,7 +183,9 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: conic-gradient(#4386bf 64%, #b3b0b094 0);
+  /* stylelint-disable */
+  background: conic-gradient(#4386bf 64%, #b3b0b094 0);
+  /* stylelint-enable */
 }
 
 .container main .book .right-book .progress .circle .inner {
@@ -199,7 +211,7 @@ body {
 
 .container main .book .right-book .progress .val .completed-val {
   font-size: 2rem;
-  columns: #000;
+  color: #000;
 }
 
 .container main .book .right-book .progress .val .completed {
@@ -234,6 +246,18 @@ body {
   color: #4b4747c9;
 }
 
+.container main .add-book form button {
+  width: 15%;
+  padding: 10px 10px;
+  border-radius: 3px;
+  background: #0290ff;
+  color: #fff;
+  border: none;
+  font-size: 0.813rem;
+  font-family: var(--Roboto);
+  font-weight: 500;
+}
+
 .container main .book .right-book .chapter button {
   background-color: #0290ff;
   margin-top: 20px;
@@ -250,13 +274,6 @@ body {
   width: 100%;
   margin: 1.3rem auto;
   border: 1px solid #b3b0b05d;
-}
-
-.container main .add-book h3 {
-  font-size: 1.25rem;
-  font-family: var(--Montserrat);
-  color: #888;
-  margin-bottom: 1rem;
 }
 
 .container main .add-book form {
@@ -276,6 +293,7 @@ body {
   font-size: 1rem;
   font-family: var(--Montserrat);
 }
+
 .container main .add-book form input::placeholder {
   color: #c4c4c4;
 }
@@ -289,16 +307,4 @@ body {
   color: #000;
   font-size: 1rem;
   font-family: var(--Montserrat);
-}
-
-.container main .add-book form button {
-  width: 15%;
-  padding: 10px 10px;
-  border-radius: 3px;
-  background: #0290ff;
-  color: #fff;
-  border: none;
-  font-size: .813rem;
-  font-family: var(--Roboto);
-  font-weight: 500;
 }
