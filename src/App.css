@@ -258,3 +258,47 @@ body {
   color: #888;
   margin-bottom: 1rem;
 }
+
+.container main .add-book form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.container main .add-book form input {
+  width: 50%;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #b3b0b0b9;
+  border-radius: 3px;
+  color: #000;
+  font-size: 1rem;
+  font-family: var(--Montserrat);
+}
+.container main .add-book form input::placeholder {
+  color: #c4c4c4;
+}
+
+.container main .add-book form select {
+  width: 30%;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #b3b0b0;
+  border-radius: 3px;
+  color: #000;
+  font-size: 1rem;
+  font-family: var(--Montserrat);
+}
+
+.container main .add-book form button {
+  width: 15%;
+  padding: 10px 10px;
+  border-radius: 3px;
+  background: #0290ff;
+  color: #fff;
+  border: none;
+  font-size: .813rem;
+  font-family: var(--Roboto);
+  font-weight: 500;
+}
