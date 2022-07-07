@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --Roboto: "Roboto Slab", serif;
+  --Montserrat: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #dddee0;
+  padding: 3.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 1px #e8e8e8;
+}
+
+.container header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 0 3px #b3b0b0;
+}
+
+.container header .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.container header .left .brand {
+  font-family: var(--Montserrat);
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0290ff;
+}
+
+.container header .left .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.container header .left .menu li,
+.container header .left .menu li:hover {
+  cursor: pointer;
+  font-family: var(--Montserrat);
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(114, 108, 108);
+}
+
+.container header .left .menu li.active {
+  color: #000;
+}
+
+.container header .right {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #e8e8e8;
+  color: #0290ff;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container main {
+  padding: 40px;
 }
