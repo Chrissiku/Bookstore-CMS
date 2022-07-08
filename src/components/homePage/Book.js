@@ -1,15 +1,17 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable quotes */
 import React from "react";
 
-const Book = () => (
+const Book = (props) => (
   <>
     <div className="book">
       <div className="left-book">
-        <span className="type">Action</span>
-        <h3>The Hunger Games</h3>
-        <span className="author">Suzanne Collins</span>
+        <span className="type">{props.type}</span>
+        <h3>{props.title}</h3>
+        <span className="author">{props.author}</span>
         <ul>
           <li>
             <a>Comments</a>

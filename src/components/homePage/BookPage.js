@@ -7,7 +7,7 @@ import AddBook from "./Add_book";
 
 const BookPage = () => (
   <>
-    <Book />
+    <Book type="Action" title="The Hunger Games" author="Suzanne Collins" />
     <AddBook />
   </>
 );

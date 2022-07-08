@@ -7,14 +7,9 @@
 >
 > In order to achieve this project I used some resources and technologies listed below :
 
- ## Here are project pages on view 
- ### Menu
-![menu](https://user-images.githubusercontent.com/101924220/177535048-b1415dd3-c48c-4e6c-8665-0e4f6dbe6256.PNG)
-### Pages
+ ## Project view
  
-| Home page  | Calculator | Quote
-| - | - | - | 
-| <img alt="Home Page" src="https://user-images.githubusercontent.com/101924220/177527050-27599c40-2fdd-49cd-a87c-1a121fabf805.PNG"> | <img  alt="Calculator" src="https://user-images.githubusercontent.com/101924220/177527037-daaf5b11-1351-442d-b51a-4cc162601f0b.PNG"> | <img  alt="Quotes" src="https://user-images.githubusercontent.com/101924220/177527060-4b978ebb-b8af-44df-8ffd-f9f51376444f.PNG">
+![book](https://user-images.githubusercontent.com/101924220/177956286-9a04c8c5-9744-45c3-ae47-73879965ef04.png)
 
 ## Built With
 
@@ -24,8 +19,7 @@
 - Library : `React.js`
 - Technologies used : Github, Git, Gitflow and Linters
 
-## Live Demo
-See  [the live demo](https://chriscacl.netlify.app/)
+## Live Demo (not available yet)
 
 <!-- Click [Here](https://chrissiku.github.io/capstone_project_two/dist
 ) To open the live demo -->
@@ -41,11 +35,12 @@ To get a local copy up and running follow these simple example steps.
 - Have a local version control like git installed on your computer
 - Have an account on Github, as an online/remote Version Control System
 - Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer;
-- At least basic of HTML and CSS.
+- To be okay with javaScript ES6
+- Knowledge of HTML and CSS.
 
 ### Setup 🎰
 
-- Click the [me](https://github.com/Chrissiku/Math-magicians) and you'll land on the pure repository;
+- Click the [me](https://github.com/Chrissiku/Bookstore-CMS) and you'll land on the pure repository;
 - click on the green (🟢) button with `Code` Inscription;
 - You can choose to download the project or just clone it if you are familiar with Git and Github;
 - Follow normal step once download in your computer and use it as it's yours.
@@ -58,7 +53,7 @@ To get a local copy up and running follow these simple example steps.
 
 > Run the command bellow inside your `git bash` or command line interface..
 
-- `npm build start` : to run the project in your default web Browser
+- `npm run start` : to run the project in your default web Browser
 - `npx stylelint "**/*.{css,scss}"` : for the `css` codebase and use of best practices. you can add
 - `npx eslint .` : for the `JavaScript` codebase and use of best practices
 - > Note that you can add `--fix` keyword to the command for `Css` and/or `JavaScript` to make sure that you avoid all errors coming from your `code editor`
