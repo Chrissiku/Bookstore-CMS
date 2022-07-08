@@ -246,7 +246,21 @@ body {
   color: #4b4747c9;
 }
 
+.container main .check-status button {
+  cursor: pointer;
+  background-color: #0290ff;
+  margin-top: 20px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-family: var(--Roboto);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 .container main .add-book form button {
+  cursor: pointer;
   width: 15%;
   padding: 10px 10px;
   border-radius: 3px;
@@ -259,6 +273,7 @@ body {
 }
 
 .container main .book .right-book .chapter button {
+  cursor: pointer;
   background-color: #0290ff;
   margin-top: 20px;
   border: none;
@@ -307,4 +322,10 @@ body {
   color: #000;
   font-size: 1rem;
   font-family: var(--Montserrat);
+}
+
+.container main .check-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
