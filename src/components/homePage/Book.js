@@ -4,11 +4,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable quotes */
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { v4 as bookId } from "uuid";
-// import { removeBook } from "../redux/books/books";
+import { removeBook } from "../redux/books/books";
 
 const Book = () => {
+  const dispatch = useDispatch();
   const BookList = useSelector((state) => state.books.value);
   return (
     <>
@@ -22,9 +23,17 @@ const Book = () => {
               <li>
                 <a>Comments</a>
               </li>
-              <li>
+              <button
+                type="button"
+                onClick={() => {
+                  dispatch(removeBook({ id: book.id }));
+                }}
+              >
+                Remove
+              </button>
+              {/* <li>
                 <a>Remove</a>
-              </li>
+              </li> */}
               <li>
                 <a>Edit</a>
               </li>
@@ -49,7 +58,7 @@ const Book = () => {
             </div>
           </div>
         </div>
-      )).reverse()}
+      ))}
     </>
   );
 };
