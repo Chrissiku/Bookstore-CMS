@@ -1,0 +1,25 @@
+.Addbook-form-holder {
+  padding-inline-start: 40px;
+}
+
+.Form-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.Add-book-form {
+  margin-top: 20px;
+  display: flex;
+  grid-gap: 32px;
+  gap: 32px;
+}
+
+.Title-add {
+  width: 39%;
+}
+
+.Book-author-input {
+  width: 30%;
+}
