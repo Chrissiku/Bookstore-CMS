@@ -1,25 +1,19 @@
-/* eslint-disable quotes */
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-// import HomePage from "./components/homePage/Home";
-import NavBar from "./components/navbar";
-import BookPage from "./components/homePage/BookPage";
-import Category from "./components/CategoryPage/category";
-import "./App.css";
+import { Routes, Route } from 'react-router-dom';
+import './css/App.css';
+import Layout from './components/Layout/Layout';
+import BookList from './components/BookList';
+import Categories from './components/Categories';
 
-const App = () => (
-  <>
-    <div className="container">
-      <NavBar />
-      <main>
-        <Routes>
-          <Route path="/" element={<BookPage />} />
-          <Route path="Category" element={<Category />} />
-          <Route />
-        </Routes>
-      </main>
-    </div>
-  </>
-);
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<BookList />} />
+        <Route path="books" element={<BookList />} />
+        <Route path="categories" element={<Categories />} />
+      </Route>
+    </Routes>
+  );
+}
 
 export default App;

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 4%;
+  background-color: #f5f6fa;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 4%;
+}
+
+#book-store {
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 5%);
+  background-color: #fafafa;
+}
