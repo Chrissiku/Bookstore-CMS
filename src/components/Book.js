@@ -42,7 +42,7 @@ const Book = (props) => {
               <div className="Progress-bar" />
             </div>
             <div className="Progress-stat">
-              <p className="Progress-percent">72%</p>
+              <p className="Progress-percent">64%</p>
               <p className="Progress-result">Completed</p>
             </div>
             <span className="Progress-divider" />
