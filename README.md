@@ -15,14 +15,14 @@
 
 - Major languages : JavaScript , JSX and CSS
 - Frameworks : none
+- Promise based HTTP : `axios`
 - Toolchain : `Babel`
-- Library : `React.js`
+- Library : `React-redux`
 - Technologies used : Github, Git, Gitflow and Linters
 
-## Live Demo (not available yet)
+## Live Demo 
 
-<!-- Click [Here](https://chrissiku.github.io/capstone_project_two/dist
-) To open the live demo -->
+Click [Here](https://storebookcms.netlify.app/) To open the live demo
 
 ## Getting Started
 
